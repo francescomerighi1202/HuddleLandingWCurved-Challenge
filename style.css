@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --pink: hsl(322, 100%, 66%);
+    --light-pink: hsl(321, 100%, 78%);
+    --light-red: hsl(0, 100%, 63%);
+
+    --dark-cyan: hsl(192, 100%, 9%);
+    --pale-blue: hsl(207, 100%, 98%);
+
+    --ff-h: 'Poppins', sans-serif;
+    --fw-h-700: 700;
+
+    --ff-b: 'Open Sans', sans-serif;
+    --fw-b-400: 400;
+    --fw-b-600: 600;
+    --fw-b-700: 700;
+}
+
+body {
+    font-family: var(--ff-b);
+}
+
+img {
+    max-width: 100%;
+}
+
+.nav {
+    padding: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--pink);
+    border: 2px solid var(--pink);
+    padding: .5em 2em;
+    border-radius: 30px;
+}
+
+.primary-section {
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+    padding: 2em;
+}
+
+.primary__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    text-align: center;
+}
+
+.primary__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary__title {
+    font-family: var(--ff-h);
+    font-weight: var(--fw-h-700);
+    font-size: 2.5rem;
+    color: var(--dark-cyan);
+}
+
+.primary__text {
+    color: var(--dark-cyan);
+    width: min(90%, 550px);
+    font-weight: var(--fw-b-600);
+    font-size: 1.125rem;
+}
+
+.primary__link {
+    text-decoration: none;
+    color: white;
+    background-color: var(--pink);
+    font-weight: var(--fw-b-700);
+    padding: 1em 3em;
+    border-radius: 30px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+}
+
+.ill--1 {
+    width: 90%;
+}
+
+.primary__stats {
+    width: min(90%, 850px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.quantity {
+    font-family: var(--ff-h);
+    font-size: 5rem;
+    color: var(--dark-cyan);
+}
+
+.type {
+    text-align: center;
+    opacity: .75;
+}
+
+.grow-together, .your-users {
+    background-color: var(--pale-blue);
+    display: flex;
+    align-items: center;
+    padding: 2em 5em;
+    gap: 5em;
+    position: relative;
+}
+
+.flowing-conversations {
+    display: flex;
+    align-items: center;
+    padding: 2em 5em;
+    gap: 5em;
+    margin-top: 10em;
+    position: relative;
+}
+
+.flowing-conversations .section__content {
+    order: 1;
+}
+
+.flowing-conversations .section__image {
+    order: 0;
+}
+
+.section__title {
+    font-family: var(--ff-h);
+    color: var(--dark-cyan);
+    font-size: 2rem;
+}
+
+.section__text {
+    color: var(--dark-cyan);
+    margin-top: 1em;
+    font-size: 1.125rem;
+}
+
+.section__content, .section__image {
+    width: 50%;
+}
+
+.get-started {
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.get-started .section__title {
+    margin-bottom: 1.5em;
+}
+
+.footer {
+    background-color: var(--dark-cyan);
+    position: relative;
+    padding: 5em 5em;
+}
+
+.flex {
+    display: flex;
+    gap: 20em;
+}
+
+.foot__text, .foot__content p {
+    color: white;
+}
+
+.foot__text {
+    margin-bottom: 2em;
+}
+
+.phone, .email {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.news {
+    text-transform: uppercase;
+    color: white;
+}
+
+.foot__form p {
+    color: white;
+    margin-top: 1.5em;
+}
+
+form {
+    margin-top: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75em;
+}
+
+.email__input {
+    padding: 1em;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+}
+
+.submit__input {
+    width: 35%;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--pink);
+    color: white;
+    font-weight: var(--fw-b-700);
+}
+
+.social__icons {
+    margin-top: 5em;
+}
+
+i {
+    color: white;
+    font-size: 2rem;
+}
+
+i + i {
+    margin-left: 1em;
+}
+
+.sec-2--bottom-bg, .sec-1--bottom-bg {
+    width: 100%;
+}
+
+.sec-2--top-bg, .sec-1--top-bg, .foot--top-bg {
+    width: 100%;
+    margin-bottom: -.5em;
+    margin-top: 10em;
+}
+
+.sec-2--bottom-bg-mobile, .sec-2--top-bg-mobile, .sec-1--bottom-bg-mobile, .sec-1--top-bg-mobile,
+.foot--top-bg-mobile {
+    display: none;
+}
+
+
+@media (max-width: 670px) {
+
+    .nav {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .primary__stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 5em;
+    }
+
+    .stats {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .get-started {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    .grow-together, .flowing-conversations, .your-users {
+        flex-direction: column;
+    }
+
+    .section__content, .section__image {
+        width: 90%;
+    }
+
+    .section__image {
+        order: 0;
+    }
+
+    .section__content {
+        order: 1;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    .email__input, .submit__input {
+        width: 100%;
+    }
+
+    .flex {
+        flex-direction: column;
+        gap: 5em;
+    }
+
+    .sec-2--bottom-bg, .sec-2--top-bg, .sec-1--bottom-bg, .sec-1--top-bg {
+        display: none;
+    }
+
+    .sec-2--bottom-bg-mobile, .sec-1--bottom-bg-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .sec-2--top-bg-mobile, .sec-1--top-bg-mobile {
+        display: block;
+        width: 100%;
+        margin-top: 10em;
+        margin-bottom: -1em;
+    }
+
+    .foot--top-bg {
+        display: none;
+    }
+
+    .foot--top-bg-mobile {
+        display: block;
+        width: 100%;
+        margin-top: 10em;
+    }
+
+}
+
+@media (max-width: 1000px) and (min-width: 750px) {
+
+    form {
+        flex-direction: column;
+    }
+
+    .email__input, .submit__input {
+        width: 100%;
+    }
+
+    .flex {
+        gap: 15em;
+    }
+
+}
