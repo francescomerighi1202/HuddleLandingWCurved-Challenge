@@ -45,6 +45,11 @@ img {
     border: 2px solid var(--pink);
     padding: .5em 2em;
     border-radius: 30px;
+    transition: all .3s;
+}
+
+.nav__link:hover {
+    opacity: .75;
 }
 
 .primary-section {
@@ -92,7 +97,12 @@ img {
     font-weight: var(--fw-b-700);
     padding: 1em 3em;
     border-radius: 30px;
+    transition: all .3s;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+}
+
+.primary__link:hover {
+    opacity: .6;
 }
 
 .ill--1 {
@@ -226,7 +236,13 @@ form {
     border-radius: 5px;
     background-color: var(--pink);
     color: white;
+    transition: all .3s;
     font-weight: var(--fw-b-700);
+    cursor: pointer;
+}
+
+.submit__input:hover {
+    background-color: rgb(255, 114, 248);
 }
 
 .social__icons {
